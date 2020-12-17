@@ -16,7 +16,7 @@ export default {
         };
     },
     mounted() {
-        axios.get("http://localhost:8083/api/users").then((res) => {
+        axios.get("http://115.29.242.103:8083/api/users").then((res) => {
             this.users = res.data;
         });
     },
