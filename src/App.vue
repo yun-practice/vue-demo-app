@@ -1,7 +1,9 @@
 <template>
     <div id="app">
         <ul>
-            <li v-for="user in users" :key="user.id">{{ user.name }}</li>
+            <li v-for="user in users" :key="user.id">
+                {{ user.id }}---{{ user.name }}
+            </li>
         </ul>
     </div>
 </template>
@@ -31,5 +33,8 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+}
+li {
+    list-style-type: none;
 }
 </style>
