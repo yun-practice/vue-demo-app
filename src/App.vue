@@ -18,7 +18,7 @@ export default {
         };
     },
     mounted() {
-        axios.get("http://115.29.242.103:8083/api/users").then((res) => {
+        axios.get("/api/users").then((res) => {
             this.users = res.data;
         });
     },
